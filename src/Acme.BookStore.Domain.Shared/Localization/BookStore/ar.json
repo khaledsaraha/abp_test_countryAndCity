@@ -37,6 +37,19 @@
     "Unspecified": "نظام",
     "SeeAllUsers": "رؤية كافة المستخدمين",
     "TakePhoto": "تصوير",
-    "ChoosePhoto": "اختر صورة"
+    "ChoosePhoto": "اختر صورة",
+    "Country:NameAlreadyExists": "البلد باسم '{0}' أو '{1}' موجود بالفعل",
+    "Country:NameArRequired": "اسم البلد بالعربية مطلوب",
+    "Country:NameEnRequired": "اسم البلد بالإنجليزية مطلوب",
+    "Country:NameArMaxLength": "اسم البلد بالعربية لا يمكن أن يتجاوز 128 حرفاً",
+    "Country:NameEnMaxLength": "اسم البلد بالإنجليزية لا يمكن أن يتجاوز 128 حرفاً",
+    "Country:CannotDeleteHasCities": "لا يمكن حذف البلد لأنه يحتوي على مدن",
+    "City:NameAlreadyExists": "المدينة باسم '{0}' أو '{1}' موجودة بالفعل في هذا البلد",
+    "City:NameArRequired": "اسم المدينة بالعربية مطلوب",
+    "City:NameEnRequired": "اسم المدينة بالإنجليزية مطلوب",
+    "City:NameArMaxLength": "اسم المدينة بالعربية لا يمكن أن يتجاوز 128 حرفاً",
+    "City:NameEnMaxLength": "اسم المدينة بالإنجليزية لا يمكن أن يتجاوز 128 حرفاً",
+    "City:CountryIdRequired": "معرف البلد مطلوب",
+    "City:CountryNotFound": "البلد المحدد غير موجود"
   }
 }

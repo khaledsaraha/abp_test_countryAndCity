@@ -1,3 +1,5 @@
+using Acme.BookStore.Cities;
+using Acme.BookStore.Countries;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
@@ -26,7 +28,10 @@ public class BookStoreDbContext :
     IIdentityDbContext
 {
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
-
+    
+    // Countries and Cities
+    public DbSet<Country> Countries { get; set; }
+    public DbSet<City> Cities { get; set; }
 
     #region Entities from the modules
 
@@ -81,11 +86,7 @@ public class BookStoreDbContext :
         
         /* Configure your own tables/entities inside here */
 
-        //builder.Entity<YourEntity>(b =>
-        //{
-        //    b.ToTable(BookStoreConsts.DbTablePrefix + "YourEntities", BookStoreConsts.DbSchema);
-        //    b.ConfigureByConvention(); //auto configure for the base class props
-        //    //...
-        //});
+        builder.ApplyConfiguration(new EntityFrameworkCore.Countries.CountryConfiguration());
+        builder.ApplyConfiguration(new EntityFrameworkCore.Cities.CityConfiguration());
     }
 }

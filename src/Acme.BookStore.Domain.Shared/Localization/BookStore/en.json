@@ -4,6 +4,19 @@
     "AppName": "BookStore",
     "Menu:Home": "Home",
     "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information visit",
-    "Welcome": "Welcome"
+    "Welcome": "Welcome",
+    "Country:NameAlreadyExists": "Country with name '{0}' or '{1}' already exists",
+    "Country:NameArRequired": "Country Arabic name is required",
+    "Country:NameEnRequired": "Country English name is required",
+    "Country:NameArMaxLength": "Country Arabic name cannot exceed 128 characters",
+    "Country:NameEnMaxLength": "Country English name cannot exceed 128 characters",
+    "Country:CannotDeleteHasCities": "Cannot delete country because it has cities",
+    "City:NameAlreadyExists": "City with name '{0}' or '{1}' already exists in this country",
+    "City:NameArRequired": "City Arabic name is required",
+    "City:NameEnRequired": "City English name is required",
+    "City:NameArMaxLength": "City Arabic name cannot exceed 128 characters",
+    "City:NameEnMaxLength": "City English name cannot exceed 128 characters",
+    "City:CountryIdRequired": "Country ID is required",
+    "City:CountryNotFound": "The specified country does not exist"
   }
 }
